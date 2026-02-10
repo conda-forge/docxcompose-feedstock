@@ -1,5 +1,5 @@
 {% set name = "docxcompose" %}
-{% set version = "1.4.0" %}
+{% set version = "2.0.1" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/docxcompose-{{ version }}.tar.gz
-  sha256: bcf2799a0b63c29eb77a3d799a2f28443ae0f69f8691ff3d753f706be515c3e9
+  sha256: 649ba37655985c093159fe899a519eee5e31bc64344610ac1a1e2d719ec41d2a
 
 build:
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - docxcompose = docxcompose.command:main
