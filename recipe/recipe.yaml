@@ -2,8 +2,7 @@ schema_version: 1
 
 context:
   name: docxcompose
-  version: "2.0.2"
-  python_min: "3.12"
+  version: "2.1.0"
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/docxcompose-${{ version }}.tar.gz
-  sha256: 3799c2a1e581765bd94b97fe5f88c28cf6b3ffbe13b8a35b46f42eabd7318e96
+  sha256: 2b19c3fa0a75905832c6518c302ab3a1fd4d41bf5aa58ad677fc83e4052ad7c0
 
 build:
   number: 0
@@ -25,13 +24,12 @@ requirements:
   host:
     - pip
     - python ${{ python_min }}.*
-    - poetry-core
+    - poetry-core >=2.0.0,<3.0.0
   run:
     - python >=${{ python_min }}
-    - babel >=2,<3
-    - lxml >=5,<6
-    - python-docx >=1,<2
-    - six >=1,<2
+    - babel >=2.10.0
+    - lxml
+    - python-docx >=1.0.0
 
 tests:
   - python:
