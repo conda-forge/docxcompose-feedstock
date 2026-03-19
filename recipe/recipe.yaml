@@ -3,7 +3,6 @@ schema_version: 1
 context:
   name: docxcompose
   version: "2.1.0"
-  python_min: "3.12"
 
 package:
   name: ${{ name|lower }}
@@ -25,13 +24,12 @@ requirements:
   host:
     - pip
     - python ${{ python_min }}.*
-    - poetry-core
+    - poetry-core >=2.0.0,<3.0.0
   run:
     - python >=${{ python_min }}
-    - babel >=2,<3
-    - lxml >=5,<6
-    - python-docx >=1,<2
-    - six >=1,<2
+    - babel >=2.10.0
+    - lxml
+    - python-docx >=1.0.0
 
 tests:
   - python:
