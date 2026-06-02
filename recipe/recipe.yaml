@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: docxcompose
-  version: "2.1.0"
+  version: "2.2.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/docxcompose-${{ version }}.tar.gz
-  sha256: 2b19c3fa0a75905832c6518c302ab3a1fd4d41bf5aa58ad677fc83e4052ad7c0
+  sha256: e2c69703a2fefad4471aad82861a1c5d7b3f4a669510de504bb36f41f66f6d3e
 
 build:
   number: 0
